@@ -24,16 +24,32 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="choiceSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="783-1t-7gM"/>
+                                </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuK-L3-U7D">
+                                <rect key="frame" x="34" y="232" width="346" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.22101233307402857" green="1" blue="0.44960999269813517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gWC-HU-qEH" secondAttribute="trailing" constant="47" id="0kK-ZG-L1x"/>
                             <constraint firstItem="gWC-HU-qEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="8ZP-ZU-3Zb"/>
+                            <constraint firstItem="EuK-L3-U7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="KcB-JH-Q7v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuK-L3-U7D" secondAttribute="trailing" constant="34" id="U6e-oc-glC"/>
+                            <constraint firstItem="EuK-L3-U7D" firstAttribute="top" secondItem="gWC-HU-qEH" secondAttribute="bottom" constant="62" id="kVP-Ii-Z5c"/>
                             <constraint firstItem="gWC-HU-qEH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="ls7-JK-Fbc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="EuK-L3-U7D" id="qDZ-y2-Hle"/>
+                        <outlet property="segmentedControl" destination="gWC-HU-qEH" id="8Md-44-W6d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
